@@ -7,10 +7,7 @@
 
 (defn default-chan [] 
     (chan 1) 
-
-(defn default-chan []
-  (chan 1))
-
+  
 (deftest buffers-tests
   (is (not (unblocking-buffer? (buffer 1))))
   (is (unblocking-buffer? (dropping-buffer 1)))
