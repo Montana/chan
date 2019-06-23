@@ -5,6 +5,9 @@
             [clojure.test :refer :all]))
 
 
+(defn default-chan [] 
+    (chan 1) 
+
 (defn default-chan []
   (chan 1))
 
