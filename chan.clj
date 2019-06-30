@@ -184,6 +184,10 @@
   (testing "bindings"
     (binding [test-dyn true]
       (is (<!! (thread test-dyn))))))
+  
+  (deftest ops-tests
+  (testing "map<"
+    (is (= [1 3 5 7]
 
 
 (deftest ops-tests
